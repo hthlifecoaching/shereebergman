@@ -347,3 +347,51 @@
 @media(min-width:1001px) {
   .original-concept-home .site-header nav { gap: clamp(14px,1.5vw,24px); }
 }
+/* Requested tighter book introduction and spacing around the book/support panels.
+   Typography, book proportions, and the rest of the homepage remain unchanged. */
+.original-concept-home .books-section { padding-block: 24px 0; }
+.original-concept-home .books-section .section-intro { margin-bottom: 22px; }
+.original-concept-home .books-section .section-intro .eyebrow { margin-bottom: 10px; }
+.original-concept-home .books-section .section-intro > p:last-child { margin-top: 10px; }
+.original-concept-home .featured-cover { position: relative; }
+.original-concept-home .featured-cover::before {
+  content: '';
+  position: absolute;
+  inset: 14px;
+  border: 7px solid #faf3e7;
+  pointer-events: none;
+}
+.original-concept-home .next-steps { padding-block: 12px 24px; align-items: start; }
+.original-concept-home .support-intro {
+  position: relative;
+  padding: 28px;
+  border: 4px double #ab875a;
+  border-radius: 5px;
+  background: #faf6ef;
+}
+.original-concept-home .support-intro::before {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  border: 1px solid #dac8ac;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.original-concept-home .support-intro::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: calc(50% - 6px);
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--wine);
+  background: #faf6ef;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+.original-concept-home .support-intro > * { position: relative; }
+@media(max-width:850px) {
+  .original-concept-home .books-section { padding-top: 20px; }
+  .original-concept-home .books-section .section-intro { margin-bottom: 18px; }
+  .original-concept-home .support-intro { padding: 24px; }
+}
