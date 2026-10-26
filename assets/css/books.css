@@ -1,0 +1,26 @@
+/* Book catalog mirrors the books section on the main site's Resources page. */
+.books-page .breadcrumbs { display: flex; gap: 12px; padding-block: 24px; font-size: 13px; color: var(--muted); }
+.books-page .breadcrumbs a { text-decoration: underline; text-underline-offset: 4px; }
+.books-page-intro { background: var(--sand); padding: 38px 0; }
+.books-page-intro h1 { font-size: clamp(40px, 5vw, 64px); }
+.books-page .section-space { padding-block: 50px 65px; }
+.books-page .journey-resources h2 { text-align: center; font-size: clamp(34px, 4vw, 48px); }
+.books-page .journey-resources .eyebrow { text-align: center; }
+.books-page .resource-books { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; margin: 30px auto 0; max-width: 900px; }
+.books-page .resource-book { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 28px 20px; border: 1px solid var(--line); border-radius: 5px; background: #fffcf8; }
+.books-page .resource-book img { width: auto; max-width: 100%; height: 266px; object-fit: contain; }
+.books-page .resource-book h3 { color: var(--wine); font-size: 22px; line-height: 1.25; margin: 22px 0; }
+.books-page .resource-book-subtitle { color: #000; font-weight: 700; }
+.books-page .resource-book-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: auto; }
+.books-page .resource-book-actions .button { min-height: 44px; padding: 12px 18px; font-size: 11px; }
+.books-page .resource-book-author { margin: 0 0 16px; }
+.books-page .resource-book-availability { font-weight: 700; color: var(--wine); margin: 0 0 20px; }
+.books-page .resource-book-recommendation { font-size: 13px; color: var(--muted); margin: 0 0 8px; }
+.books-page .resource-book img.fence-book-cover { border: 1px solid #c7b49d; }
+.books-page .resource-buy-unavailable { cursor: not-allowed; opacity: .5; }
+.books-page .site-header nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 8px; }
+@media(max-width:850px) {
+  .books-page .resource-books { grid-template-columns: 1fr; }
+  .books-page .resource-book { max-width: 420px; width: 100%; margin-inline: auto; }
+  .books-page .section-space { padding-top: 35px; }
+}

@@ -1,0 +1,349 @@
+/* Original concept restoration. These rules apply only to the homepage's
+   header, opening scene, three feature cards, and scripture band.
+   Existing content below that band retains its original implementation. */
+.original-concept-home {
+  --concept-serif: Georgia, 'Times New Roman', serif;
+  --concept-scale: min(1vw, 16px);
+}
+.original-concept-home .site-header {
+  background: #fdfbf7;
+  border-bottom: 0;
+}
+.original-concept-home .header-inner {
+  width: 80%;
+  max-width: 1280px;
+  min-height: 0;
+  height: calc(var(--concept-scale) * 6.26);
+  gap: 28px;
+}
+.original-concept-home .site-header .brand { gap: 13px; }
+.original-concept-home .site-header .brand img {
+  width: calc(var(--concept-scale) * 4.1);
+  height: calc(var(--concept-scale) * 4.1);
+}
+.original-concept-home .site-header .brand > span {
+  font-family: var(--concept-serif);
+  font-size: calc(var(--concept-scale) * 3.1);
+  font-weight: 400;
+  letter-spacing: -1.6px;
+}
+.original-concept-home .site-header .brand small {
+  font-size: calc(var(--concept-scale) * .69);
+  letter-spacing: 3.4px;
+  margin-top: 6px;
+  white-space: nowrap;
+}
+.original-concept-home .site-header nav { gap: calc(var(--concept-scale) * 2.1); }
+.original-concept-home .site-header nav a { font-size: 14px; }
+.original-concept-home .header-button {
+  flex-shrink: 0;
+  font: 400 18px/1.3 var(--concept-serif);
+  letter-spacing: 0;
+  gap: 17px;
+  min-height: 49px;
+  padding: 12px 25px;
+  margin: 0;
+}
+.original-concept-home .hero {
+  background: #f9ead7;
+  height: calc(var(--concept-scale) * 32.66);
+  min-height: 430px;
+}
+.original-concept-home .hero::after {
+  background: linear-gradient(90deg, transparent 42%, #fcf1e080 47%, transparent 52%);
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-concept-wash, .hero-concept-photo {
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.hero-concept-wash { left: 0; width: 49%; }
+.hero-concept-photo { right: 0; width: 51.44%; }
+.original-concept-home .hero-inner {
+  width: 85.3%;
+  max-width: 1365px;
+  height: 100%;
+  min-height: 0;
+  align-items: flex-start;
+}
+.original-concept-home .hero-copy {
+  width: 58%;
+  padding: calc(var(--concept-scale) * 4.8) 0 0;
+}
+.original-concept-home .hero .eyebrow {
+  font-size: calc(var(--concept-scale) * 1.18);
+  letter-spacing: 3.4px;
+  color: #996b37;
+  margin: 0 0 calc(var(--concept-scale) * .65);
+}
+.original-concept-home .hero h1 {
+  font-family: var(--concept-serif);
+  font-size: calc(var(--concept-scale) * 4.9);
+  font-weight: 400;
+  letter-spacing: -2.9px;
+  line-height: 1.08;
+  color: #650d29;
+}
+.original-concept-home .hero-description {
+  font: 400 calc(var(--concept-scale) * 1.9)/1.3 var(--concept-serif);
+  max-width: calc(var(--concept-scale) * 40);
+  margin: calc(var(--concept-scale) * 1.3) 0 calc(var(--concept-scale) * 1.9);
+}
+.original-concept-home .hero .actions { gap: 14px; }
+.original-concept-home .hero .button {
+  font: 400 calc(var(--concept-scale) * 1.28)/1.3 var(--concept-serif);
+  letter-spacing: 0;
+  gap: 24px;
+  padding: 14px 29px;
+  min-height: 51px;
+}
+.original-concept-home .hero .button-outline { background: #fff9ee50; }
+.original-concept-home .hero .button-outline:hover { background: var(--wine); }
+.original-concept-home .promise {
+  height: calc(var(--concept-scale) * 3.6);
+  min-height: 48px;
+  padding: 0 20px;
+  gap: 28px;
+  background: #f9f5ee;
+}
+.original-concept-home .promise span { width: calc(var(--concept-scale) * 18.6); }
+.original-concept-home .promise p { font-size: 11px; letter-spacing: 4px; }
+.original-concept-home .path-section {
+  width: 85.6%;
+  max-width: 1370px;
+  padding-block: calc(var(--concept-scale) * 1.5) calc(var(--concept-scale) * 1.2);
+}
+.original-concept-home .path-section h2 {
+  font-family: var(--concept-serif);
+  font-size: calc(var(--concept-scale) * 3.05);
+  font-weight: 400;
+  letter-spacing: -1.4px;
+  margin-bottom: calc(var(--concept-scale) * .75);
+  line-height: 1.2;
+}
+.original-concept-home .path-grid { gap: 12px; }
+.original-concept-home .path-card {
+  background: #fdfbf7;
+  border-color: #e5d6c2;
+  border-radius: 5px;
+  padding: 10px;
+  min-height: calc(var(--concept-scale) * 24.55);
+}
+.original-concept-home .concept-photo {
+  height: auto;
+  aspect-ratio: 367 / 171;
+  border-radius: 3px;
+  flex-shrink: 0;
+  display: block;
+}
+.concept-photo svg { width: 100%; height: 100%; display: block; }
+.original-concept-home .card-body {
+  padding: 14px 2px 0;
+}
+.original-concept-home .card-body h3 {
+  font: 400 calc(var(--concept-scale) * 1.72)/1.15 var(--concept-serif);
+  letter-spacing: -.65px;
+  white-space: nowrap;
+}
+.original-concept-home .card-body p {
+  font: 400 calc(var(--concept-scale) * 1.32)/1.12 var(--concept-serif);
+  margin: 9px 0 6px;
+}
+.original-concept-home .path-card .text-link {
+  font-size: 12px;
+  letter-spacing: 2px;
+  gap: 17px;
+  min-height: 32px;
+  padding-top: 3px;
+}
+.original-concept-home .scripture {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #650d29;
+  min-height: 101px;
+  padding: 19px 0 21px;
+}
+.scripture-landscape { position: absolute; inset: 0; z-index: -1; }
+.scripture-landscape svg { width: 100%; height: 100%; display: block; }
+/* Hide the original image's lettering while retaining the exact mountain silhouettes. */
+.scripture-landscape::after {
+  content: ''; position: absolute; inset: 0 18%;
+  background: linear-gradient(180deg,#70142e 0%,#6b102d 70%,#650d29 100%);
+}
+.original-concept-home .scripture .container { position: relative; width: 85.6%; max-width: 1370px; }
+.original-concept-home .scripture blockquote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font: italic 400 28px/1.3 var(--concept-serif);
+  color: #fff6e8;
+}
+.quote-rule { display: block; height: 1px; width: 76px; background: #b08a53; flex-shrink: 0; }
+.original-concept-home .scripture p {
+  color: #c5a16b;
+  font-size: 9px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+@media(min-width:1600px) {
+  .original-concept-home .hero { max-width: none; }
+}
+@media(max-width:1200px) and (min-width:1001px) {
+  .original-concept-home .header-inner { width: 85.6%; gap: 20px; }
+  .original-concept-home .site-header nav { gap: 17px; }
+  .original-concept-home .header-button { padding-inline: 18px; font-size: 16px; }
+  .original-concept-home .hero { min-height: 380px; }
+  .original-concept-home .hero-copy { padding-top: 50px; }
+  .original-concept-home .hero .button { padding: 12px 20px; min-height: 45px; }
+  .original-concept-home .path-card .text-link { font-size: 10px; letter-spacing: 1.5px; }
+}
+@media(max-width:1000px) {
+  .original-concept-home .header-inner { width: calc(100% - 40px); height: auto; min-height: 80px; padding-block: 12px; }
+  .original-concept-home .site-header .brand > span { font-size: 32px; }
+  .original-concept-home .site-header .brand img { width: 44px; height: 44px; }
+  .original-concept-home .site-header .brand small { font-size: 8px; letter-spacing: 2.3px; }
+  .original-concept-home .header-button { margin-left: 12px; font-size: 16px; min-height: 45px; }
+  .original-concept-home .site-header nav { gap: 23px; }
+  .original-concept-home .hero { min-height: 365px; }
+  .original-concept-home .hero-copy { padding-top: 38px; }
+  .original-concept-home .hero .eyebrow { font-size: 11px; letter-spacing: 2px; }
+  .original-concept-home .hero h1 { font-size: 47px; letter-spacing: -2px; }
+  .original-concept-home .hero-description { font-size: 21px; max-width: 420px; margin: 20px 0; }
+  .original-concept-home .hero .button { font-size: 15px; padding: 12px 17px; gap: 16px; min-height: 45px; }
+  .original-concept-home .path-section { width: calc(100% - 40px); padding-block: 24px; }
+  .original-concept-home .path-section h2 { font-size: 36px; margin-bottom: 20px; }
+  .original-concept-home .path-card { min-height: 290px; }
+  .original-concept-home .card-body h3 { font-size: 20px; white-space: normal; }
+  .original-concept-home .card-body p { font-size: 16px; line-height: 1.3; }
+  .desktop-break { display: none; }
+  .original-concept-home .path-card .text-link { font-size: 9px; letter-spacing: 1.3px; }
+  .original-concept-home .scripture blockquote { font-size: 25px; }
+  .quote-rule { width: 45px; }
+}
+@media(max-width:850px) {
+  .original-concept-home .header-button { display: none; }
+  .original-concept-home .hero { height: auto; min-height: 0; padding-bottom: 0; display: flex; flex-direction: column; }
+  .hero-concept-wash { width: 100%; height: 390px; }
+  .hero-concept-photo { position: relative; width: 100%; height: auto; aspect-ratio: 715 / 454; order: 2; }
+  .original-concept-home .hero::after { display: none; }
+  .original-concept-home .hero-inner { width: calc(100% - 40px); height: auto; order: 1; }
+  .original-concept-home .hero-copy { width: 100%; padding: 35px 0 24px; }
+  .original-concept-home .hero h1 { font-size: clamp(34px, 5.7vw, 48px); letter-spacing: -1.5px; }
+  .original-concept-home .hero .eyebrow { font-size: 10px; letter-spacing: 2.2px; margin-bottom: 13px; }
+  .original-concept-home .hero-description { font-size: 22px; max-width: 580px; margin: 18px 0 23px; }
+  .original-concept-home .hero .actions { gap: 10px; }
+  .original-concept-home .hero .button { padding: 13px 17px; font-size: 15px; gap: 14px; }
+  .original-concept-home .promise { padding-inline: 10px; gap: 15px; }
+  .original-concept-home .promise p { font-size: 8px; letter-spacing: 2px; }
+  .original-concept-home .promise span { width: 10vw; }
+  .original-concept-home .path-section h2 { font-size: 32px; letter-spacing: -.9px; }
+  .original-concept-home .path-grid { gap: 20px; }
+  .original-concept-home .path-card { padding: 8px; min-height: 0; }
+  .original-concept-home .card-body { padding: 16px 10px 7px; }
+  .original-concept-home .card-body h3 { font-size: 24px; }
+  .original-concept-home .card-body p { font-size: 19px; line-height: 1.3; margin: 12px 0; }
+  .original-concept-home .path-card .text-link { font-size: 11px; margin-top: 3px; }
+  .original-concept-home .scripture { padding-block: 24px; }
+  .original-concept-home .scripture blockquote { font-size: 24px; gap: 12px; }
+  .quote-rule { width: 20px; }
+  .original-concept-home .scripture p { margin-top: 15px; }
+}
+/* Feather the photograph into the original warm left-hand background. */
+@media(min-width:851px) {
+  .hero-concept-photo {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%);
+    mask-image: linear-gradient(90deg, transparent, #000 7%);
+  }
+  .original-concept-home .hero h1 { font-size: calc(var(--concept-scale) * 4.75); }
+  .original-concept-home .hero-description {
+    font-size: calc(var(--concept-scale) * 1.82);
+    margin-top: calc(var(--concept-scale) * 1.1);
+    margin-bottom: calc(var(--concept-scale) * 1.6);
+  }
+}
+/* This noninteractive quotation panel uses the original artwork verbatim;
+   the equivalent HTML quotation remains available to screen readers. */
+@media(min-width:851px) {
+  .original-concept-home .scripture {
+    height: calc(var(--concept-scale) * 7.27);
+    min-height: 0;
+    padding: 0;
+  }
+  .scripture-landscape::after { display: none; }
+  .original-concept-home .scripture .container {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+  }
+}
+@media(max-width:850px) {
+  .scripture-landscape { display: none; }
+}
+/* Approved portrait adjustment: reveal more of the jacket on the left.
+   The SVG's feathered mask keeps the existing wording clear and leaves the
+   portrait in its original position; only the visible photo boundary moves. */
+@media(min-width:851px) {
+  .original-concept-home .hero-concept-photo {
+    width: 55.7554%;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .original-concept-home .hero::after { display: none; }
+}
+@media(max-width:850px) {
+  .original-concept-home .hero-concept-photo { aspect-ratio: 775 / 454; }
+}
+/* Requested scenery visible through the translucent left-hand background. */
+.original-concept-home .hero::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 49%;
+  background: url('../img/mountain-sunrise.webp') left center / auto 100% no-repeat;
+  pointer-events: none;
+}
+.original-concept-home .hero-concept-wash { opacity: .36; }
+@media(max-width:850px) {
+  .original-concept-home .hero::before {
+    width: 100%;
+    height: 390px;
+    bottom: auto;
+    background-size: cover;
+  }
+}
+
+/* Requested larger top navigation links on the book website. */
+.original-concept-home .site-header nav a { font-size: 16px; }
+
+/* Requested smaller homepage book feature; retain image proportions and content. */
+.original-concept-home .featured-book { max-width: 1000px; margin-inline: auto; min-height: 400px; }
+.original-concept-home .featured-cover { padding: 32px; }
+.original-concept-home .featured-cover img { height: 300px; width: auto; object-fit: contain; }
+.original-concept-home .featured-copy { padding: 32px; }
+.original-concept-home .featured-copy h3 { font-size: 40px; margin-bottom: 18px; }
+.original-concept-home .featured-copy > p:not(.eyebrow) { font-size: 15px; }
+.original-concept-home .featured-copy .eyebrow { font-size: 10px; margin-bottom: 12px; }
+.original-concept-home .featured-copy .actions { gap: 12px; margin-top: 22px; }
+.original-concept-home .featured-copy .button { padding: 12px 20px; min-height: 45px; font-size: 12px; }
+@media(max-width:700px) {
+  .original-concept-home .featured-cover { padding: 28px; }
+  .original-concept-home .featured-cover img { height: 260px; }
+  .original-concept-home .featured-copy { padding: 25px; }
+  .original-concept-home .featured-copy h3 { font-size: 36px; }
+}
+/* Requested lower hero headline and description, with the eyebrow unchanged. */
+.original-concept-home .hero h1 { margin-top: 32px; }
+/* Keep the added Testimonials link comfortably within the existing header. */
+@media(min-width:1001px) {
+  .original-concept-home .site-header nav { gap: clamp(14px,1.5vw,24px); }
+}
