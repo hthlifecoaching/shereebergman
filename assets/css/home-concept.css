@@ -400,3 +400,17 @@
 .original-concept-home .step-options article { padding-block: 12px; }
 .original-concept-home .step-options p { margin-top: 8px; }
 .original-concept-home .step-options .text-link { margin-top: 4px; }
+/* Requested even alignment with the bordered support introduction. */
+@media(min-width:851px) {
+  .original-concept-home .next-steps { align-items: stretch; }
+  .original-concept-home .step-options { margin-top: 16px; display: flex; flex-direction: column; }
+  .original-concept-home .step-options article { flex: 1; }
+}
+.original-concept-home .step-option-link { display: flex; gap: 22px; width: 100%; color: inherit; }
+.original-concept-home .step-option-link .step-number { flex-shrink: 0; }
+.original-concept-home .step-option-link:hover h3 { color: var(--wine); }
+.original-concept-home .gift-message { padding-block: 32px; }
+.original-concept-home .gift-copy { max-width: 1000px; margin-inline: auto; font: 600 28px/1.45 var(--serif); color: var(--wine); text-align: center; }
+@media(max-width:700px) {
+  .original-concept-home .gift-copy { font-size: 25px; }
+}
