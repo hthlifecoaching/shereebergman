@@ -1,0 +1,4 @@
+{
+  "functions": [{"source":"functions","codebase":"book-contact","runtime":"nodejs22","ignore":["node_modules",".git","firebase-debug.log*",".env.local"]}],
+  "emulators":{"functions":{"port":5003},"database":{"port":9003},"ui":{"enabled":false},"singleProjectMode":true}
+}

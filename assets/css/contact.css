@@ -1,0 +1,31 @@
+.contact-page .breadcrumbs { display:flex;gap:12px;padding-block:24px;font-size:13px;color:var(--muted); }
+.contact-page .breadcrumbs a { text-decoration:underline;text-underline-offset:4px; }
+.contact-intro { background:var(--sand);padding:38px 0; }
+.contact-intro h1 { font-size:clamp(40px,5vw,64px); }
+.contact-intro p { margin-top:18px;max-width:750px;font-size:17px;color:var(--muted); }
+.contact-layout { display:grid;grid-template-columns:.75fr 1.25fr;gap:65px;padding-block:55px 70px;align-items:start; }
+.contact-details h2 { font-size:38px;margin-bottom:22px; }
+.contact-details p:not(.eyebrow) { color:var(--muted);font-size:16px; }
+.contact-phone { display:inline-block;color:var(--wine);font-family:var(--serif);font-size:32px;margin-block:22px; }
+.contact-form { padding:32px;border:1px solid var(--line);border-radius:5px;background:#fffcf8; }
+.contact-form h2 { font-size:36px;margin-bottom:12px; }
+.required-note { font-size:13px;color:var(--muted);margin-bottom:24px; }
+.contact-fields { display:grid;grid-template-columns:1fr 1fr;gap:22px 20px; }
+.contact-fields>div { min-width:0; }
+.contact-fields label { display:block;font-size:14px;font-weight:700;margin-bottom:7px; }
+.contact-fields label span { font-size:12px;font-weight:400;color:var(--muted); }
+.contact-fields input,.contact-fields textarea { display:block;width:100%;border:1px solid #b9a58e;border-radius:3px;background:#fff;color:var(--ink);padding:11px 12px;font:16px/1.5 var(--sans); }
+.contact-fields input { min-height:48px; }
+.contact-fields textarea { resize:vertical;min-height:170px; }
+.contact-fields input:focus-visible,.contact-fields textarea:focus-visible { outline:3px solid #ac803d;outline-offset:3px; }
+.full-width { grid-column:1/-1; }
+.contact-service-note,.contact-privacy { font-size:13px;color:var(--muted);margin:20px 0;line-height:1.6; }
+.contact-privacy a { text-decoration:underline;text-underline-offset:4px; }
+.contact-form .button { cursor:pointer; }
+.contact-form .button:disabled { cursor:wait;opacity:.65; }
+.form-status { margin-top:18px;font-size:15px;overflow-wrap:anywhere; }
+.form-status[data-error=true] { color:#9f1b32; }
+.contact-honeypot { position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden; }
+.contact-page .site-header nav a[aria-current=page] { text-decoration:underline;text-underline-offset:8px; }
+@media(max-width:850px) { .contact-layout { grid-template-columns:1fr;gap:30px;padding-block:35px 45px; }.contact-form { padding:25px; } }
+@media(max-width:500px) { .contact-fields { grid-template-columns:1fr;gap:18px; }.contact-form { padding:22px; }.contact-intro p { font-size:16px; } }

@@ -11,12 +11,14 @@ From this directory, run `python3 -m http.server 8088`, then visit http://localh
 - `index.html`: homepage, book collection, about, coaching, events inquiry, and contact.
 - `assets/css/site.css`: responsive layout and brand palette (`#650d29` burgundy).
 - `assets/js/site.js`: accessible mobile navigation and footer year.
+- `contact.html` and `assets/js/contact.js`: contact form using the shared Firebase project.
+- `functions/`: separate Book Website contact/email backend; SMTP stays in Secret Manager.
 - `assets/img/`: local book covers, mountain imagery, and burgundy-jacket portraits.
 - `assets/fonts/`: local fonts with their license files.
 
 Book descriptions and retailer destinations are drawn from the existing Heart to Heart website. Purchases open Amazon; coaching and group bookings use the existing main and support group websites. Email links open the visitor’s email application. The forthcoming book is marked coming soon.
 
-This is a local repository implementation; it has not been deployed or pushed as part of this build.
+The static website can be previewed locally or published from the repository. Its Contact page uses the deployed Book Website Firebase functions; see docs/contact-notifications.md. Use GitHub Desktop for commits and pushes.
 
 ## Portrait asset
 

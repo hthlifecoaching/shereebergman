@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-26",
+  "project": "hearttoheart-14e56",
+  "recipient": "hthlifecoaching@gmail.com",
+  "functions": [
+    {
+      "id": "retryBookContactEmail",
+      "project": "hearttoheart-14e56",
+      "region": "us-central1",
+      "uri": "https://us-central1-hearttoheart-14e56.cloudfunctions.net/retryBookContactEmail",
+      "codebase": "book-contact",
+      "state": "ACTIVE",
+      "hash": "5ccac2cf797e8acaad955a60c443058e37668634"
+    },
+    {
+      "id": "submitBookContact",
+      "project": "hearttoheart-14e56",
+      "region": "us-central1",
+      "uri": "https://us-central1-hearttoheart-14e56.cloudfunctions.net/submitBookContact",
+      "codebase": "book-contact",
+      "state": "ACTIVE",
+      "hash": "5ccac2cf797e8acaad955a60c443058e37668634"
+    }
+  ],
+  "preexistingFunctionsUnchanged": 14,
+  "readiness": {
+    "invalid_submission_status": 400,
+    "cors_origin": "http://127.0.0.1:8088",
+    "validation_error": "{\"error\":{\"message\":\"Name is invalid.\",\"status\":\"INVALID_ARGUMENT\"}}",
+    "bookContactMessages_private": true,
+    "bookContactRateLimits_private": true
+  },
+  "realTestEmailSent": false
+}
