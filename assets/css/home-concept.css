@@ -395,3 +395,8 @@
   .original-concept-home .books-section .section-intro { margin-bottom: 18px; }
   .original-concept-home .support-intro { padding: 24px; }
 }
+/* Requested compact support options and a slightly lower introduction box. */
+.original-concept-home .support-intro { margin-top: 16px; }
+.original-concept-home .step-options article { padding-block: 12px; }
+.original-concept-home .step-options p { margin-top: 8px; }
+.original-concept-home .step-options .text-link { margin-top: 4px; }
