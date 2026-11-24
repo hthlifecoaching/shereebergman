@@ -29,3 +29,5 @@
 .contact-page .site-header nav a[aria-current=page] { text-decoration:underline;text-underline-offset:8px; }
 @media(max-width:850px) { .contact-layout { grid-template-columns:1fr;gap:30px;padding-block:35px 45px; }.contact-form { padding:25px; } }
 @media(max-width:500px) { .contact-fields { grid-template-columns:1fr;gap:18px; }.contact-form { padding:22px; }.contact-intro p { font-size:16px; } }
+
+.contact-solicitation-notice{grid-column:1/-1;margin:0;background:var(--wine);color:#fff;text-align:center;font-size:clamp(18px,2.4vw,24px);font-weight:700;line-height:1.5;border-radius:5px;padding:22px 26px;outline:1px solid #fff;outline-offset:-9px}
